@@ -14,6 +14,7 @@ The minimum SDK version depends on the ABI as follows:
  
  If you want to support SDK versions below these named, you have to make a [standalone toolchain](https://developer.android.com/ndk/guides/standalone_toolchain).
 
+
 ## Usage
 
 The example builds **shared** and **static** libs for a 64-bit ARM Android (**arm64-v8a**) with a minimum SDK version of **21**. The includes and binaries are found under `assimp-for-android/build/arm64-v8a`.
@@ -26,22 +27,22 @@ export HOST_TAG=YOUR-HOST-TAG
 ./build.sh arm64-v8a 21 ON
 ```
 
-___
-**HOST_TAG**
+## HOST_TAG
 
 | NDK OS Variant | Host Tag |
 |--|--|
 | macOS | darwin-x86_64 |
 | Linux | linux-x86_64 |
 
-___
-**./build.sh**
+
+## ./build.sh
 
 The build script takes at least 3 arguments defining the ABI, the  MIN_SDK_VERSION and building either shared librarys (*ON*) or not (*OFF*). Static libraries will always be build.
 ``` bash
 ./build.sh ABI MIN_SDK_VERSION BUILD_SHARED_LIBS
 ```
 
+## Importer/Exporter
 In addition one can turn *ON* or *OFF* the Assimp importer and exporter.
 
 By default, the following importer formats are enabled
