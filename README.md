@@ -19,7 +19,7 @@ The minimum SDK version depends on the ABI as follows:
 
 The example builds **shared** and **static** libs for a 64-bit ARM Android (**arm64-v8a**) with a minimum SDK version of **21**. The includes and binaries are found under `assimp-for-android/build/arm64-v8a`.
 ```bash
-git clone https://
+git clone https://github.com/kenomo/assimp-for-android.git
 cd assimp-for-android
 ./download.sh
 export ANDROID_NDK=PATH-TO-THE-ANDROID-NDK-FOLDER
