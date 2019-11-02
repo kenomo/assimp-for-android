@@ -43,7 +43,7 @@ The build script takes at least 3 arguments defining the ABI, the  MIN_SDK_VERSI
 ```
 
 ## Importer/Exporter
-In addition one can turn *ON* or *OFF* the Assimp importer and exporter.
+In addition one can turn *ON* or *OFF* Assimp importer and exporter.
 
 By default, the following importer formats are enabled
 - AMF 3DS AC ASE ASSBIN B3D BVH COLLADA DXF CSM HMP IRRMESH IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OBJ OGRE OPENGEX PLY MS3D COB BLEND IFC XGL FBX Q3D Q3BSP RAW SIB SMD STL TERRAGEN 3D X X3D GLTF 3MF MMD STEP
@@ -51,7 +51,7 @@ By default, the following importer formats are enabled
 and the following exporter formats:
 - 3DS ASSBIN ASSXML COLLADA OBJ OPENGEX PLY FBX STL X X3D GLTF 3MF ASSJSON STEP
 
-They are disabled by adding e. g.:
+They can be disabled by adding e. g.:
 - -DASSIMP_BUILD_**AMF**_IMPORTER=OFF
 - -DASSIMP_BUILD_**3DS**_EXPORTER=OFF
 
